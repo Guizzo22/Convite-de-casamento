@@ -3,11 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- Mantém a página clara: impede modo escuro forçado do navegador -->
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light">
+<meta name="darkreader-lock">
+<meta name="theme-color" content="#faf7f2">
 <title>Mariana & Guilherme — 24.10.2026</title>
 <link rel="icon" type="image/png" href="/fiveicon2.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
+  color-scheme: only light;
   --verde:        #3d4f2e;
   --verde-claro:  #5a6f45;
   --verde-muted:  #8a9e78;
@@ -28,7 +34,7 @@
   --transition:   all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { color-scheme: only light; background: #faf7f2; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { background: var(--creme); color: var(--texto); font-family: var(--font-sans); font-weight: 300; line-height: 1.7; min-height: 100vh; overflow-x: hidden; }
 
 .screen { display: none; }
