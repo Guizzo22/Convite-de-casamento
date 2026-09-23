@@ -304,6 +304,24 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
 .hero-greeting-text { font-family: var(--font-serif); font-size: 15px; font-style: italic; color: var(--creme); line-height: 1.5; }
 .hero-greeting-name { font-family: var(--font-script); font-style: italic; font-size: 30px; color: var(--rose-light); display: block; line-height: 1.2; margin-top: 2px; }
 
+/* ── CARD DO VERSÍCULO / CONVITE ── */
+.hero-verse {
+  margin: 16px auto 0;
+  max-width: 360px;
+  padding: 24px 22px;
+  background-color: #2c3e2d;
+  border: 1px solid rgba(200,149,108,0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+.hero-verse-quote { font-family: var(--font-serif); font-style: italic; font-size: 16px; line-height: 1.7; color: var(--creme); }
+.hero-verse-ref { display: block; margin-top: 8px; font-family: var(--font-sans); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--rose-gold); font-weight: 500; }
+.hero-verse-rule { width: 40px; height: 1px; background: rgba(200,149,108,0.5); margin: 18px auto; }
+.hero-verse-invite { font-family: var(--font-serif); font-size: 15px; line-height: 1.7; color: rgba(250,247,242,0.85); }
+
 /* ── SETA/TEXTO DE DESÇA ── */
 
 
@@ -653,6 +671,14 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
       <span class="hero-greeting-text">Olá,</span>
       <span class="hero-greeting-name" id="guest-name-display">Convidado</span>
       <span class="hero-greeting-text" style="font-size:14px;opacity:.8;">você é nosso convidado especial 🌻</span>
+    </div>
+
+    <!-- CARD DO VERSÍCULO E CONVITE -->
+    <div class="hero-verse" style="animation: fadeUp 1.2s 0.85s ease both;">
+      <p class="hero-verse-quote">“Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, o homem não separe.”</p>
+      <span class="hero-verse-ref">Marcos 10, 8-9</span>
+      <div class="hero-verse-rule"></div>
+      <p class="hero-verse-invite">Sob a bênção de Deus e de nossos pais, convidamos você para testemunhar o sacramento do nosso matrimônio e o início da nossa nova família.</p>
     </div>
   </div>
 
