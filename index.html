@@ -91,7 +91,7 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
 .seal-btn:active { transform: translate(-50%, -50%) scale(0.96); }
 .seal-btn .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 
-.validate-bg.mobile .seal-btn  { left: 50%;   top: 82%; width: 32%;   aspect-ratio: 1; }
+.validate-bg.mobile .seal-btn  { left: 50%;   top: 68%; width: 38%;   aspect-ratio: 1; }
 .validate-bg.desktop .seal-btn { left: 50.5%; top: 82%; width: 15%; aspect-ratio: 1; } 
 
 .seal-pulse {
@@ -159,6 +159,7 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
   min-height: 100vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -306,6 +307,11 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
 /* ── SETA/TEXTO DE DESÇA ── */
 
 
+.hero-scroll {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
 .hero-scroll span {
   font-size: 0.6rem;
   letter-spacing: 0.3em;
@@ -477,7 +483,7 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
 .rsvp-success-name-tag { padding: 4px 12px; background: rgba(200,149,108,0.15); border: 1px solid rgba(200,149,108,0.3); border-radius: 100px; font-size: 13px; color: var(--rose-light); font-family: var(--font-serif); }
 .rsvp-success-text { font-family: var(--font-serif); font-size: 15px; font-style: italic; color: var(--verde-muted); line-height: 1.6; }
 
-.footer { background: var(--verde-escuro); padding: 40px 24px; text-align: center; }
+.footer { background-color: #2c3e2d; padding: 40px 24px; text-align: center; }
 .footer-names { font-family: var(--font-script); font-style: italic; font-size: 38px; color: var(--creme); margin-bottom: 6px; }
 .footer-date { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--verde-muted); margin-bottom: 18px; }
 .footer-sf { font-size: 18px; opacity: 0.35; letter-spacing: 8px; }
@@ -503,7 +509,7 @@ body { background: var(--creme); color: var(--texto); font-family: var(--font-sa
   height: 52px;
   border-radius: 50%;
   border: 1px solid rgba(200,149,108,0.4);
-  background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
+  background-color: #2c3e2d;
   box-shadow: var(--shadow-sm);
   display: none;
   align-items: center;
